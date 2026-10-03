@@ -22,16 +22,32 @@ nav {
 }
 
 #nav-image, #nav-menu, .nav-button {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     flex: 1 1 0;
 }
 
 #nav-menu, .nav-button {
     text-align: center;
     align-content: center;
-    font-style: none;
+    text-decoration: none;
 }
 
+main {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--theme-color-3);
+}
 
+#homepage-main h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 7rem;
+    padding: 10vh 0 2vh 0;
+    text-align: center;
+}
 
-
+#homepage-main p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    padding-inline: 5rem;
+    text-align: center;
+}
