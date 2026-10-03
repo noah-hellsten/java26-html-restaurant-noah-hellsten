@@ -1,5 +1,37 @@
+:root {
+    --theme-color-0: rgb(189, 33, 33);
+    --theme-color-1: rgb(254, 144, 111);
+    --theme-color-2: rgb(255, 196, 0);
+    --theme-color-3: rgb(255, 235, 235);
+    --theme-color-4: gray;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--theme-color-0);
+    height: 10vh;
+    width: 100vw;
+    padding: .5em;
+}
+
+#nav-image, #nav-menu, .nav-button {
+    border: 2px solid black;
+    flex: 1 1 0;
+}
+
+#nav-menu, .nav-button {
+    text-align: center;
+    align-content: center;
+    font-style: none;
+}
+
+
+
+
