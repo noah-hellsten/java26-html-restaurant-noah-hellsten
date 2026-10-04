@@ -1,9 +1,14 @@
 :root {
     --theme-color-0: rgb(189, 33, 33);
     --theme-color-1: rgb(254, 144, 111);
+    --opaque-theme-color-1: rgba(255, 187, 166, 0.8);
     --theme-color-2: rgb(255, 196, 0);
     --theme-color-3: rgb(255, 235, 235);
     --theme-color-4: gray;
+    --navbar-height: 10vh;
+    --bar-text-color: white;
+    --theme-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 * {
@@ -16,7 +21,7 @@ nav {
     display: flex;
     flex-direction: row;
     background-color: var(--theme-color-0);
-    height: 10vh;
+    height: var(--navbar-height);
     width: 100vw;
     padding: .5em;
 }
@@ -35,19 +40,47 @@ nav {
 main {
     width: 100vw;
     min-height: 100vh;
-    background-color: var(--theme-color-3);
+    background-image: url(/images/restaurang-savoy-small-plates.jpg);
+    background-size: cover;
 }
 
-#homepage-main h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 7rem;
-    padding: 10vh 0 2vh 0;
+.content-div > h1 {
+    font-family: var(--theme-font);
+    font-size: 6rem;
+    padding-bottom: 2vh;
     text-align: center;
 }
 
-#homepage-main p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.content-div > p {
+    font-family: var(--theme-font);
     font-size: 1rem;
     padding-inline: 5rem;
     text-align: center;
+}
+
+.content-div {
+    background-color: var(--opaque-theme-color-1);
+    min-height: 100vh;
+    margin-inline: 2rem;
+    padding: 1rem;
+}
+
+#restaurant-info-text {
+    font-family: var(--theme-font);
+    padding: 1em;
+    margin-block: 1em;
+}
+
+#restaurant-info-text > p {
+    padding-block: 1em;
+}
+
+footer {
+    padding: 1rem;
+    background-color: var(--theme-color-0);
+    color: var(--bar-text-color);
+}
+
+footer a {
+    color: var(--bar-text-color);
 }
