@@ -44,6 +44,13 @@ main {
     background-size: cover;
 }
 
+.content-div {
+    background-color: var(--opaque-theme-color-1);
+    min-height: 100vh;
+    margin-inline: 2rem;
+    padding: 1rem;
+}
+
 .content-div > h1 {
     font-family: var(--theme-font);
     font-size: 6rem;
@@ -56,13 +63,6 @@ main {
     font-size: 1rem;
     padding-inline: 5rem;
     text-align: center;
-}
-
-.content-div {
-    background-color: var(--opaque-theme-color-1);
-    min-height: 100vh;
-    margin-inline: 2rem;
-    padding: 1rem;
 }
 
 #restaurant-info-text {
@@ -83,4 +83,26 @@ footer {
 
 footer a {
     color: var(--bar-text-color);
+}
+
+
+
+
+/* menu page */
+
+#menu-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 30vh;
+    gap: 1em;
+}
+
+.menu-item {
+    border: 2px solid black;
+}
+
+h2{
+    font-family: var(--theme-font);
+    text-align: center;
+    align-self: center;
 }
