@@ -4,7 +4,7 @@
     --opaque-theme-color-1: rgba(255, 187, 166, 0.8);
     --theme-color-2: rgb(255, 196, 0);
     --theme-color-3: rgb(255, 235, 235);
-    --theme-color-4: gray;
+    --theme-color-4: rgb(0, 0, 0);
     --navbar-height: 10vh;
     --bar-text-color: white;
     --theme-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -26,15 +26,21 @@ nav {
     padding: .5em;
 }
 
-#nav-image, #nav-menu, .nav-button {
+#nav-home, #nav-menu, .nav-button {
     /* border: 2px solid black; */
     flex: 1 1 0;
 }
 
-#nav-menu, .nav-button {
+#nav-home, #nav-menu, .nav-button {
     text-align: center;
     align-content: center;
     text-decoration: none;
+    color: var(--theme-color-4);
+}
+
+#nav-home {
+    font-family: var(--theme-font);
+    font-size: 2rem;
 }
 
 main {
@@ -131,4 +137,17 @@ h2{
 
 .menu-item p {
     font-size: .8rem;
+}
+
+/* boka bord */
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 70%;
+    background-color: var(--theme-color-1);
+    justify-self: center;
+    padding: 1rem;
+    border-radius: 1rem;
 }
